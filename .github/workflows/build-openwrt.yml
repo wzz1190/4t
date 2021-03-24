@@ -18,11 +18,11 @@ on:
     inputs:
       ssh:
         description: 'SSH connection to Actions'
-        required: false
-        default: 'false'
+        required: true
+        default: 'true'
 
 env:
-  REPO_URL: https://github.com/openwrt/openwrt
+  REPO_URL: https://github.com/wzz1190/openwrt
   REPO_BRANCH: v19.07.7
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: .config
